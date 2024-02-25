@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1200 height=550 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/ibt.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ibt.data.br",
-        frameworkUrl: buildUrl + "/ibt.framework.js.br",
-        codeUrl: buildUrl + "/ibt.wasm.br",
+        dataUrl: buildUrl + "/ibt.data.gz",
+        frameworkUrl: buildUrl + "/ibt.framework.js.gz",
+        codeUrl: buildUrl + "/ibt.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Birchstag Studios",
         productName: "Imagine Being Trapped",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1200px";
-        canvas.style.height = "550px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       canvas.style.background = "url('" + buildUrl + "/ibt.jpg') center / cover";
